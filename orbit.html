@@ -1,17 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"/>
+		<link href="orbit.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+		<title>Gravity Well v 0.0</title>
+	</head>
+	<body>
 
- <!DOCTYPE html>
+		<section id="controls-wrapper">
+			<label>Mass of Added Planet</label>
+			<select id="masses-list">
+				<option value="0.000003003">Earth</option>
+				<option value="0.0009543">Jupiter</option>
+				<option value="1">Sun</option>
+				<option value="0.1">Red Dwarf Star</option>   
+			</select>
+			<button id="reset-button">Reset</button>
+		</section>
+		<canvas id="canvas"></canvas>
 
 
-  <section id="controls-wrapper">
-    <label>Mass of Added Planet</label>
-    <select id="masses-list">
-      <option value="0.000003003">Earth</option>
-      <option value="0.0009543">Jupiter</option>
-      <option value="1">Sun</option>
-      <option value="0.1">Red Dwarf Star</option>   
-    </select>
-    <button id="reset-button">Reset</button>
-  </section>
-  <canvas id="canvas"></canvas>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+		<script src="orbit.js"></script>
+	</body>
+</html>
 
-	 
